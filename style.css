@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+/* Header */
+header {
+    border-bottom: 3px solid black;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 80px;
+    margin-left: 20px;
+}
+
+i.fa-bars {
+    display: none;
+}
+
+/* Navigation Bar */
+.list {
+    height: 100;
+    display: flex;
+}
+
+.item {
+    width: 120px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.item:before {
+    position: absolute;
+    content: '';
+    top: 25%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: transparent;
+    border-radius: 30px;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.item:hover:before {
+    background-color: black;
+    transform: rotateY(180deg);
+}
+
+.item:hover a {
+    color: white;
+}
+
+/* Website Content */
+section {
+    height: 100%;
+    width: 100%;
+    background-image: url('./coding.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Responsive Navigetion bar */
+@media only screen and (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .navbar {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    .navbar.active {
+        max-height: 400px;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .item {
+        height: 50px;
+        width: 50%;
+    }
+
+    .item:before {
+        height: 100%;
+        width: 100%;
+        top: 0;
+    }
+
+    .item:hover:before {
+        transform: rotateY(0deg);
+    }
+    
+    i.fa-bars {
+            display: block;
+            position: absolute;
+            font-size: 30px;
+            top: 23px;
+            right: 20px;
+            cursor: pointer;
+        }
+    
+
+    i.fa-bars:hover {
+        color: gray;
+    }
+}
+    
