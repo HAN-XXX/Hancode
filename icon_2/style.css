@@ -1,0 +1,61 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dddddd;
+}
+
+* {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.icon {
+    height: 80px;
+    width: 80px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #1dcaff;
+    z-index: 1;
+}
+
+.instagram {
+    background: linear-gradient(200deg, #4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
+    z-index: 2;
+}
+
+.google {
+    background-color: #db4e39;
+    z-index: 3;
+}
+
+.youtube {
+    background-color: #ff0000;
+    z-index: 5;
+}
+
+.icon i {
+    font-size: 30px;
+    color: white;
+}
+
+.icon:hover {
+    z-index: 10;
+    transform: scale(1.2) rotate(15deg);
+}
+
