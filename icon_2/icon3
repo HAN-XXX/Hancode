@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Out Overlap SNS Buttons</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/da2ccfc8c4.js"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <a href="https://apple.com" class="icon apple">
+            <i class="fa-brands fa-apple"></i>
+        </a>
+        <a href="https://twitter.com" class="icon twitter">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" class="icon instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://facebook.com" class="icon facebook">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://youtube.com" class="icon youtube">
+            <i class="fa-brands fa-youtube"></i>
+        <a> 
+    </div>
+</body>
+</html>
